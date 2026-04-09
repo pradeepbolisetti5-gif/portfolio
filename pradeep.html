@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pradeep | Software Engineer</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <style>
+        :root {
+            --bg-deep: #0a0a0a;
+            --accent-primary: #ffffff;
+            --accent-secondary: #94a3b8;
+        }
+        
+        body {
+            background-color: var(--bg-deep);
+            color: #e2e8f0;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Subtle Grey Ambient Light */
+        .blob {
+            position: fixed;
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, transparent 60%);
+            z-index: -1;
+            filter: blur(100px);
+            animation: move 25s infinite alternate;
+        }
+
+        @keyframes move {
+            from { transform: translate(-15%, -15%); }
+            to { transform: translate(15%, 15%); }
+        }
+
+        /* Graphite Card Styling */
+        .graphite-card {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .graphite-card:hover {
+            border-color: rgba(255, 255, 255, 0.3);
+            background: rgba(255, 255, 255, 0.05);
+            transform: translateY(-5px);
+        }
+
+        .text-silver-gradient {
+            background: linear-gradient(135deg, #ffffff 0%, #94a3b8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .fade-up {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s ease-out;
+        }
+
+        .fade-up.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        ::-webkit-scrollbar { width: 5px; }
+        ::-webkit-scrollbar-track { background: #0a0a0a; }
+        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 10px; }
+    </style>
+</head>
+<body>
+
+     <div class="blob"></div>
+
+    <nav class="fixed w-full z-50 top-6 px-6">
+        <div class="max-w-5xl mx-auto graphite-card p-3 rounded-2xl flex justify-between items-center px-8 shadow-2xl">
+            <div class="text-2xl font-black text-white tracking-tighter">P<span class="text-slate-500">.</span></div>
+            
+            <div class="hidden md:flex gap-8 text-[11px] font-bold tracking-widest uppercase text-slate-400">
+                <a href="#about-me" class="hover:text-white transition-colors">About</a>
+                <a href="#projects" class="hover:text-white transition-colors">Projects</a>
+                <a href="#stack-section" class="hover:text-white transition-colors">Stack</a>
+                <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+            </div>
+
+            
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-6 pt-32 md:pt-52">
+        
+        <section class="flex flex-col md:flex-row items-center gap-16 mb-40 fade-up">
+            <div class="relative group">
+                <div class="absolute -inset-1 bg-white/10 rounded-full blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
+                <div class="relative w-56 h-56 md:w-72 md:h-72 rounded-full overflow-hidden border border-white/10 bg-white/5 shadow-2xl">
+                    <img src="C:\Users\Madhu\OneDrive\Pictures\Camera Roll\pradeep.jpg" alt="Pradeep" class="w-full h-full object-cover">
+                </div>
+            </div>
+
+            <div class="flex-1 text-center md:text-left">
+                <h2 class="text-slate-500 font-bold tracking-[0.4em] text-[10px] mb-4 uppercase">HELLO, I'M</h2>
+                <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6 text-white">
+                    Pradeep <br> <span class="text-silver-gradient">Software Engineer.</span>
+                </h1>
+                <p class="text-slate-400 max-w-xl text-lg leading-relaxed mb-10">
+                    Transforming low-level logic into high-level experiences. I build robust C applications and sleek web interfaces where performance meets polish.
+                </p>
+                
+                <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                    <a href="#projects" class="px-8 py-4 bg-white text-black hover:bg-slate-200 rounded-xl font-bold transition-all shadow-lg">
+                        View Work
+                    </a>
+                    <a href="C:\Users\Madhu\Downloads\Resume (1) (1).pdf" download class="px-8 py-4 border border-white/10 hover:border-white/40 text-white rounded-xl font-bold transition-			all flex items-center gap-2">
+                        <i class="ph ph-arrow-down text-lg"></i>
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+        </section>
+<section id="about-me" class="relative py-24 fade-up">
+    <div class="absolute inset-0 grid-bg -z-10 opacity-40"></div>
+    
+    <div class="max-w-4xl mx-auto text-center px-6">
+        <h2 class="text-6xl md:text-8xl font-extrabold text-white mb-8 tracking-tight">
+            About <span class="text-blue-purple-gradient">Me</span>
+        </h2>
+        
+        <p class="text-slate-400 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
+            A passionate student and aspiring developer exploring the world of 
+            full-stack development and modern technologies.
+        </p>
+    </div>
+</section>
+
+        <section id="about" class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-40">
+            <div class="md:col-span-2 graphite-card p-10 rounded-[2.5rem] fade-up">
+                <h3 class="text-2xl font-bold text-white mb-4">The Philosophy</h3>
+                 <p class="text-slate-400 leading-relaxed text-lg">
+    I am a developer who believes that software should be 
+    <span class="text-white">simple, stable, and user-focused</span>. 
+    By mastering the logic of <span class="text-white">C and Java</span>, 
+    I build strong foundations, while using <span class="text-white">React and Tailwind</span> 
+    to create frontend experiences that are clean and intuitive. 
+    My goal is to learn every day and turn complex ideas into 
+    functional digital solutions.
+            </div>
+            
+            
+            <div id="stack-section" class="graphite-card p-10 rounded-[2.5rem] flex flex-col items-center justify-center text-center fade-up scroll-mt-32">
+                <i class="ph ph-stack text-slate-500 text-4xl mb-4"></i>
+                <h3 class="font-bold text-white uppercase tracking-tighter">Stack</h3>
+                <div class="flex flex-wrap justify-center gap-2 mt-4 text-white">
+                    <span class="px-3 py-1 text-[10px] font-bold border border-white/10 rounded-full hover:bg-white hover:text-black transition-all">C</span>
+                    <span class="px-3 py-1 text-[10px] font-bold border border-white/10 rounded-full hover:bg-white hover:text-black transition-all">JAVA</span>
+                    <span class="px-3 py-1 text-[10px] font-bold border border-white/10 rounded-full hover:bg-white hover:text-black transition-all">REACT</span>
+                    <span class="px-3 py-1 text-[10px] font-bold border border-white/10 rounded-full hover:bg-white hover:text-black transition-all">TAILWIND</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="pb-40 scroll-mt-32">
+            <div class="flex items-center gap-6 mb-16 fade-up">
+                <h2 class="text-3xl font-extrabold text-white">Technical Labs</h2>
+                <div class="h-[1px] w-full bg-white/5"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="group fade-up">
+                    <div class="graphite-card aspect-video rounded-[2.5rem] p-8 flex flex-col justify-center border-white/5 relative overflow-hidden">
+                        <span class="absolute top-6 right-8 text-[9px] font-bold text-blue-400 border border-blue-400/30 px-2 py-1 rounded-full uppercase">In Progress</span>
+                        <h3 class="text-xl font-bold text-white mb-2">Unix Shell Environment</h3>
+                        <p class="text-slate-500 text-sm">Building a custom CLI in C to master process management and signal handling.</p>
+                    </div>
+                </div>
+
+                <div class="group fade-up">
+                    <div class="graphite-card aspect-video rounded-[2.5rem] p-8 flex flex-col justify-center border-white/5 relative overflow-hidden">
+                        <span class="absolute top-6 right-8 text-[9px] font-bold text-purple-400 border border-purple-400/30 px-2 py-1 rounded-full uppercase">Research</span>
+                        <h3 class="text-xl font-bold text-white mb-2">Modern UI Dashboard</h3>
+                        <p class="text-slate-500 text-sm">Designing a high-performance React dashboard with complex data visualization components.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contact" class="px-6 py-24 border-t border-white/5 text-center">
+        <h2 class="text-3xl font-extrabold text-white mb-6">Let's connect.</h2>
+        <a href="mailto:your@email.com" class="text-xl text-slate-400 hover:text-white transition-all">pradeepbolisetti5@email.com</a>
+        <div class="flex justify-center gap-8 mt-12 text-slate-600">
+            <a href="#" class="hover:text-white transition-colors"><i class="ph ph-github-logo text-3xl"></i></a>
+            <a href="#" class="hover:text-white transition-colors"><i class="ph ph-linkedin-logo text-3xl"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('active');
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+        document.addEventListener('mousemove', (e) => {
+            const blob = document.querySelector('.blob');
+            const x = (e.clientX / window.innerWidth) * 15;
+            const y = (e.clientY / window.innerHeight) * 15;
+            blob.style.transform = `translate(${x}%, ${y}%)`;
+        });
+    </script>
+    <button id="toTop" class="fixed bottom-8 right-8 p-3 graphite-card rounded-full opacity-0 translate-y-10 transition-all duration-500 z-50 hover:border-white">
+    <i class="ph ph-arrow-up text-white"></i>
+</button>
+
+<script>
+    const toTop = document.getElementById('toTop');
+    window.onscroll = () => {
+        if (window.scrollY > 500) {
+            toTop.classList.remove('opacity-0', 'translate-y-10');
+            toTop.classList.add('opacity-100', 'translate-y-0');
+        } else {
+            toTop.classList.add('opacity-0', 'translate-y-10');
+            toTop.classList.remove('opacity-100', 'translate-y-0');
+        }
+    };
+    toTop.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+</script>
+</body>
+</html>
